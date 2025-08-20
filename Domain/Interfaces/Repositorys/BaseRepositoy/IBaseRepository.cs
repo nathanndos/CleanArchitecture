@@ -8,6 +8,6 @@ namespace Domain.Interfaces.Repositorys.BaseRepositoy
         void update(T entity);
         void delete(T entity);
         Task<T> get(Guid ide, CancellationToken cancellationToken);
-        Task<T> getAll(CancellationToken cancellationToken);
+        Task<List<T>> getAll(CancellationToken cancellationToken);
     }
 }
